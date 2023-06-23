@@ -15,8 +15,11 @@ elif weight <= 10:
 else:
   ground_price = 20 + 4.75*weight
 
+print(f"Ground Shipping Price: ${ground_price}")
+
 #Ground Premium Shipping
 ground_premium = 125
+print(f"Ground Premium Shipping Price: ${ground_premium}")
 
 #Drone Shipping
 if weight <= 2:
@@ -27,7 +30,10 @@ elif weight <= 10:
   drone_price = 12*weight
 else:
   drone_price = 14.25*weight
+print(f"Drone Shipping Price: ${drone_price}")
 
+print("")
+print("")
 
 #Tell user which shipping method is least expensive
 if ground_price < ground_premium and ground_price < drone_price:
